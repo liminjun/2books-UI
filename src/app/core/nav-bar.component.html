@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  <a class="navbar-brand" href="#">图书轮流看</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" [routerLink]="['/home']">
+          <span class="glyphicon glyphicon-home"> 首页</span>
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/books']">
+          <span class="glyphicon glyphicon-book"> 图书</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/users']">
+          <span class="glyphicon glyphicon-user"> 用户</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/news']">
+          <span class="glyphicon glyphicon-bullhorn"> 新闻公告</span>
+        </a>
+      </li>
+    </ul>
+    <!-- 右侧导航内容 -->
+    <ul class="navbar-nav pull-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" [routerLink]="['/login']">
+          <span class="glyphicon glyphicon-log-in"> 登录</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/logout']">
+          <span class="glyphicon glyphicon-log-out"> 注销</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/register']">
+          <span class="glyphicon glyphicon-edit"> 注册</span>
+        </a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>

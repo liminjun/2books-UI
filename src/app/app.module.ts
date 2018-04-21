@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 
@@ -18,8 +18,10 @@ import { MatchDirective } from './shared/match.directive';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ErrorComponent } from './error/error.component';
-
-
+import { NavBarComponent } from './core/nav-bar.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {CoreModule} from "./core/core.module";
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
@@ -38,10 +40,15 @@ import { ErrorComponent } from './error/error.component';
     MatchDirective,
     AboutComponent,
     NotfoundComponent,
-    ErrorComponent
+    ErrorComponent,
+    
   ],
   imports: [
-    BrowserModule
+    NgbModule.forRoot(),
+    RouterModule,
+    BrowserModule,
+    CoreModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
