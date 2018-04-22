@@ -1,3 +1,25 @@
-<p>
-  register works!
-</p>
+<div class="main-container">
+
+    <form class="form-horizontal form-signin" name="registerForm">
+        <div class="form-group">
+            <label for="inputEmail">电子邮件</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="user@exsample.com" ng-model="ctrl.email" required autofocus>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">密码</label>
+            <input type="password" id="inputPassword" class="form-control" ng-model="ctrl.password" placeholder="密码" required>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword2">确认密码</label>
+            <input type="password" id="inputPassword2" class="form-control" ng-model="ctrl.passwordRepeat" placeholder="确认密码" required>
+        </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="ctrl.register();">确定</button>
+            <button class="btn btn-secondary" type="reset">取消</button>
+        </div>
+    </form>
+
+</div>

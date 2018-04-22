@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
+
+@import "glyphicons.css";
+html{
+position: relative;
+min-height: 100%;
+}
 body{
     margin-bottom: 60px;
+  }
+  .main{
+    margin:60px 0 20px;
   }

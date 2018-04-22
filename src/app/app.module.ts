@@ -22,11 +22,12 @@ import { NavBarComponent } from './core/nav-bar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CoreModule} from "./core/core.module";
 import { appRoutes } from './routes';
-
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
-
+   
 
     InitCapsPipe,
 
@@ -41,12 +42,15 @@ import { appRoutes } from './routes';
     AboutComponent,
     NotfoundComponent,
     ErrorComponent,
-    
+    LoginComponent
   ],
   imports: [
     NgbModule.forRoot(),
     RouterModule,
+    
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     CoreModule,
     RouterModule.forRoot(appRoutes)
   ],
